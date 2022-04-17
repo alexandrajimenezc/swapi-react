@@ -75,7 +75,7 @@ function App() {
         type="text"
         placeholder="buscar personaje" />
       <ul>
-        {errorState.hasError && <div> {errorState.message} </div>}
+      {errorState.hasError && <div> {errorState.message} </div>}
         {people?.results?.map((character) => (
           <li onClick={() => showDetail(character)} key={character.name}>
             {character.name}
